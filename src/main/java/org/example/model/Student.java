@@ -1,8 +1,11 @@
-package org.example;
+package org.example.model;
 
 public class Student {
     private String studentName;
     private String studentId;
+
+    // o relacionamento entre Student e Course é do tipo n:m portanto essa variável aqui não faz sentido.
+    // mesmo que um Student só pudesse fazer um curso nesse caso a variável seria do tipo Course e não do tipo String
     private String studentCourse;
 
     public Student(String studentName, String studentId, String studentCourse) {
